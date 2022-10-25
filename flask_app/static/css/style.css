@@ -1,0 +1,17 @@
+body {
+    /*background-image: url('../img/grande/big-rice-field-in-morning-in-thailand.jpg');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(182, 215, 215);
+    /*margin-left: 20px;*/
+    /*margin-right: 20px;*/
+}
+
+#cuerpo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-1 {
+    width: auto;
+}

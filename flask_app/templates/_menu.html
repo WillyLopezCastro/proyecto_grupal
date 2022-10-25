@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">NOTICIAS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="/noticias">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="https://www.latercera.com/">La Tercera PM</a>
+                <a class="nav-link active" aria-current="page" href="https://www.lanacion.cl/">La Nación</a>
+            </div>
+        </div>
+        <div class="d-flex">
+            <p class="me-2">Hola, {{session['usuario']}}</p>
+            <a class="btn btn-danger" href="/logout">SALIR</a>
+        </div>
+    </div>
+</nav>

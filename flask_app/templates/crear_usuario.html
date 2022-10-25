@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block titulo %}crear usuario{% endblock %}
+{% block contenido %}
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="">NOTICIAS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="/noticias">Noticias</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<section class="vh-100" style="background-color: rgb(182, 215, 215)">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                
+                    <h1>Registro de Usuario</h1>
+                    <hr>
+                
+                    <form action="/procesar_registro" method="post">
+                        <div class="mb-3">
+                            <label for="nombre_registro" class="form-label">Nombre</label>
+                            <input type="text" name="nombre" class="form-control" id="nombre_registro"  placeholder="Ejemplo: Maria">
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellido_registro" class="form-label">Apellido</label>
+                            <input type="text" name="apellido" class="form-control" id="apellido_registro"  placeholder="Ejemplo: Hernandez">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email_registro" class="form-label">Correo Electrónico</label>
+                            <input type="email" name="email" class="form-control" id="email_registro" aria-describedby="emailHelp" placeholder="Ejemplo: maria@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password_registro" class="form-label">Contraseña</label>
+                            <input type="password" name="password" class="form-control" id="password_registro">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cpassword_registro" class="form-label">Confirmar Contraseña</label>
+                            <input type="password" name="cpassword" class="form-control" id="cpassword_registro">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Crear Usuario</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
