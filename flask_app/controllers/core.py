@@ -79,3 +79,6 @@ def procesar_login():
 def logout():
     session.clear()
     return redirect('/')
+@app.route("/divisas")
+def divisas():
+    return render_template("divisa.html")
